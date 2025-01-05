@@ -16,7 +16,7 @@ function App() {
 
   }
   useEffect(() => {
-    axios.get("http://localhost:4040/api/product").then(res => {
+    axios.get("https://nodeproject-i0da.onrender.com/api/product/").then(res => {
       console.log(res);
       setArr(res.data)
     }).catch(err => {
